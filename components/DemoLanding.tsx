@@ -33,8 +33,8 @@ const LoRaSimulation = dynamic(() => import("./LoRaSimulation"), { ssr: false, l
 type Props = { appUrl?: string; nodeUrl?: string };
 
 export default function DemoLanding({
-  appUrl = "https://together-relief.shiiim.chatgpt.site",
-  nodeUrl = "https://together-node.shiiim.chatgpt.site",
+  appUrl = "",
+  nodeUrl = "/node",
 }: Props) {
   const [mode, setMode] = useState<"city" | "hardware" | "radio">("city");
   function explore(next: "city" | "hardware" | "radio") {
@@ -60,7 +60,7 @@ export default function DemoLanding({
           <a href="#architecture">Architecture</a>
           <a href="#pilot">For districts</a>
         </nav>
-        <a className="demo-nav-launch" href={appUrl}>
+        <a className="demo-nav-launch" href={appUrl || "/"}>
           Open app <ArrowUpRight size={16} />
         </a>
       </header>
@@ -78,7 +78,7 @@ export default function DemoLanding({
               When networks stop, we stay together.
             </p>
             <div className="demo-hero-actions">
-              <a className="demo-btn demo-btn-primary" href={appUrl}>
+              <a className="demo-btn demo-btn-primary" href={appUrl || "/"}>
                 <Smartphone size={19} /> Open mobile app{" "}
                 <ArrowUpRight size={17} />
               </a>
@@ -242,7 +242,7 @@ export default function DemoLanding({
           className="demo-launch-grid"
           aria-label="Open Together experiences"
         >
-          <a className="demo-launch-card mobile" href={appUrl}>
+          <a className="demo-launch-card mobile" href={appUrl || "/"}>
             <div className="demo-launch-icon">
               <Smartphone size={31} />
             </div>

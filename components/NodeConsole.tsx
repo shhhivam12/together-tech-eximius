@@ -147,7 +147,7 @@ function RequestIcon({ category }: { category: string }) {
   );
 }
 export default function NodeConsole({
-  appUrl = "https://together-relief.shiiim.chatgpt.site",
+  appUrl = "",
 }: {
   appUrl?: string;
 }) {
@@ -316,7 +316,7 @@ export default function NodeConsole({
             <br />
             LoRa hardware is illustrated.
           </p>
-          <a href={appUrl} target="_blank" rel="noreferrer">
+          <a href={appUrl || "/"} target="_blank" rel="noreferrer">
             Open mobile app <ExternalLink size={14} />
           </a>
         </div>

@@ -15,10 +15,10 @@ export default function Project() {
         centre, and a resident PWA.
       </p>
       <div className="evidence-links">
-        <a href="https://together-demo.shiiim.chatgpt.site">
+        <a href="/demo">
           Explore the demo ↗
         </a>
-        <a href="https://together-node.shiiim.chatgpt.site">
+        <a href="/node">
           Open nodal centre ↗
         </a>
         <a href="/">Open mobile app ↗</a>

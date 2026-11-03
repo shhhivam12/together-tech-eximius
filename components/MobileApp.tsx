@@ -328,17 +328,17 @@ export default function MobileApp() {
       <aside className="m-desktop-note">
         <a
           className="m-outer-brand"
-          href="https://together-demo.shiiim.chatgpt.site"
+          href="/demo"
         >
           <img src="/brand/mark-mono.svg" alt="" />
           together
         </a>
         <p>The resident app</p>
         <div className="m-side-links">
-          <a href="https://together-node.shiiim.chatgpt.site">
+          <a href="/node">
             Open nodal centre <ArrowUpRight size={15} />
           </a>
-          <a href="https://together-demo.shiiim.chatgpt.site">
+          <a href="/demo">
             Explore the demo <ArrowUpRight size={15} />
           </a>
         </div>

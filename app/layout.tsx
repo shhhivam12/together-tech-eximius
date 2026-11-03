@@ -16,7 +16,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <aside style={{background:"#173d32",color:"#fff",font:"500 14px/1.5 system-ui",padding:"8px 16px",textAlign:"center"}}>
+          Tech Eximius exercise · Use fictional details only. The shared queue is visible to other visitors. No emergency responders are contacted.
+        </aside>
+        {children}
+      </body>
     </html>
   );
 }
